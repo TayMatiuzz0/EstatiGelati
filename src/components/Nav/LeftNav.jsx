@@ -1,43 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import IconGelato from '../../img/icon-gelato.png'
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Item, Ul, Right, Left, Center, MediaSocial, Icon } from './style';
 
-
-import { Item, Ul, Right, Left, Center } from './style';
-
-const LeftNav = ({ open}) => {
-
-
-
-
+const LeftNav = ({ open }) => {
 
     return (
         <Ul open={open}>
-
-          <Left>
-              <Item href='#' className="home">
-               
-              </Item>
-          </Left>
+            {
+                open ? 
+                <Left open={open}>
+                    <Icon src={IconGelato} />
+                </Left> 
+                : ''
+            }
+            
 
             <Center>
                 <li>
-                    <Item open={open} href="#">Home</Item>
+                    <Item open={open} href="#home">Home</Item>
                 </li>
                 <li>
-                    <Item open={open} href="#">Sabores</Item>
+                    <Item open={open} href="#sabores">Sabores</Item>
                 </li>
                 <li>
-                    <Item  open={open} href="#">Nosso Local</Item>
+                    <Item  open={open} href="#local">Nosso Local</Item>
                 </li>
                 <li>
-                    <Item  open={open} href="#">Contato</Item>
+                    <Item  open={open} href="#contato">Contato</Item>
                 </li>
             </Center>
 
             <Right>
-                
+                <MediaSocial icon={faFacebook} />
+                <MediaSocial icon={faInstagram} />
+                <MediaSocial icon={faTwitter} />      
             </Right>
            
         </Ul>

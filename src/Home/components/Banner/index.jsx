@@ -4,7 +4,7 @@ import {Container, Background} from "./styled"
 function Banner(){
     return(
         <>
-            <Container className="container-fluid">
+            <Container className="container-fluid" id="home">
                 <Background>
                     <h3>Gelato</h3>
                     <h1>Artesanal</h1>

@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+
+    @media (max-width: 768px){
+        padding: 0;
+        margin: 0;
+
+        .row{
+            width: 100%;
+        }
+    }
 `
 
 export const FooterStyled = styled.footer`
@@ -37,7 +46,12 @@ export const FooterStyled = styled.footer`
 
 
     @media (max-width: 768px){
-        
+        padding: 50px 75px 0 75px;
+
+        p{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
     }
 `
 

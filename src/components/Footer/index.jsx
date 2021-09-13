@@ -5,7 +5,7 @@ import { faMapMarkerAlt, faMobileAlt, faClock } from '@fortawesome/free-solid-sv
 function Footer(){
     return(
         <>
-            <FooterStyled>
+            <FooterStyled id="contato">
             <Container className="container-fluid" >
                     <div className="row">
                         <div className="col-md-1"></div>

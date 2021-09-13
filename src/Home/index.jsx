@@ -1,4 +1,3 @@
-import Header from "../components/Header"
 import Banner from "./components/Banner"
 import NossosSabores from "./components/NossosSabores"
 import Delivery from "./components/Delivery"
@@ -10,7 +9,6 @@ import Nav from "../components/Nav"
 function Home(){
     return(
         <>
-            {/* <Header/> */}
             <Nav/>
             <Banner/>
             <NossosSabores/>
